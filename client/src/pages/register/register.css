@@ -1,0 +1,323 @@
+.loginPage {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0;
+  margin: 7vh 8vw 7vh 8vw;
+  height: calc(100vh - 14vh);
+  width: calc(100vw - 16vw);
+  border-radius: 40px;
+  background: #f5f5f5;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  display: flex;
+}
+.loginPage .Loginleft {
+  flex: 5;
+}
+.loginPage .Loginleft div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 220px;
+}
+.loginPage .Loginleft div img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+}
+.loginPage .Loginleft div span {
+  font-family: "Krona One", sans-serif;
+  color: #2f2d52;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 52px;
+}
+.loginPage .Loginleft div .pLogin {
+  font-size: 30px;
+}
+.loginPage .Loginleft div p {
+  font-size: 20px;
+}
+@media (max-width: 1688px) {
+  .loginPage .Loginleft div {
+    padding-left: 120px;
+  }
+}
+@media (max-width: 1517px) {
+  .loginPage .Loginleft div {
+    padding-left: 50px;
+  }
+  .loginPage .Loginleft div img {
+    width: 250px;
+    height: 250px;
+  }
+  .loginPage .Loginleft div span {
+    font-size: 45px;
+  }
+  .loginPage .Loginleft div .pLogin {
+    font-size: 25px;
+  }
+  .loginPage .Loginleft div p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1020px) {
+  .loginPage .Loginleft {
+    display: none;
+  }
+}
+.loginPage .Loginright {
+  flex: 5;
+}
+.loginPage .Loginright .loginrightwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-right: 220px;
+  align-items: center;
+}
+.loginPage .Loginright .loginrightwrapper span {
+  font-family: "Krona One", sans-serif;
+  color: #2f2d52;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 52px;
+}
+.loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin .icon {
+  position: absolute;
+  left: 60px;
+  bottom: 0px;
+  color: gray;
+}
+.loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+  font-family: "Courier New", Courier, monospace;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 20px 20px 85px;
+  margin-top: 40px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.loginPage .Loginright .loginrightwrapper .formLogin .errorRegister {
+  color: red;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.loginPage .Loginright .loginrightwrapper .formLogin button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 350px;
+  margin-top: 40px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #2f2d52;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+.loginPage .Loginright .loginrightwrapper .dontHaveAccount {
+  display: flex;
+  align-items: center;
+}
+.loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin span {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0.7;
+}
+.loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount1 {
+  color: gray;
+  margin-right: 10px;
+}
+.loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount2 {
+  color: #414141;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount2:hover {
+  color: #2f2d52;
+}
+@media (max-width: 1688px) {
+  .loginPage .Loginright .loginrightwrapper {
+    padding-right: 120px;
+  }
+}
+@media (max-width: 1373px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    font-size: 45px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin .icon {
+    left: 30px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+    padding: 20px 0px 20px 80px;
+    font-size: 16px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 280px;
+    font-size: 18px;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount1 {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1020px) {
+  .loginPage .Loginright .loginrightwrapper {
+    padding-right: 0px;
+  }
+  .loginPage .Loginright .loginrightwrapper span {
+    font-size: 50px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+    padding: 20px 20px 20px 95px;
+    font-size: 16px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 330px;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin {
+    flex-direction: row;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount1 {
+    margin-right: 10px;
+  }
+}
+@media (max-height: 617px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    font-size: 35px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    height: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+    padding: 20px 0px 20px 80px;
+    font-size: 16px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin .icon {
+    display: none;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount1 {
+    margin-right: 0px;
+  }
+}
+@media (orientation: landscape) and (max-height: 434px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+    padding: 20px 0px 20px 65px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 240px;
+    margin-bottom: 10px;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount .LinkLogin .dontHaveAccount1 {
+    margin-right: 0px;
+  }
+}
+@media (max-height: 549px) {
+  .loginPage .Loginright .loginrightwrapper .dontHaveAccount1 {
+    display: none;
+  }
+}
+@media (max-height: 482px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    display: none;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 280px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 305px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    display: none;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+    padding: 20px 0px 20px 20px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 230px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-height: 335px) {
+  .loginPage .Loginright .loginrightwrapper span {
+    display: none;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin input {
+    padding: 10px 0px 10px 20px;
+    margin-top: 20px;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin .inputsLogin .icon {
+    display: none;
+  }
+  .loginPage .Loginright .loginrightwrapper .formLogin button {
+    width: 230px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .loginPage {
+    margin: 2vh 3vw 2vh 3vw;
+    height: calc(100vh - 4vh);
+    width: calc(100vw - 6vw);
+  }
+}/*# sourceMappingURL=register.css.map */

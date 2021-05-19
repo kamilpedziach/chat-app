@@ -1,0 +1,326 @@
+@import './variables';
+
+.Loginright{
+  flex: 5;
+  .loginrightwrapper{
+    @include flex(100%);
+    padding-right: 220px;
+    align-items: center;
+    span{
+      @include headline()
+    }
+    .formLogin{
+      .inputsLogin{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      .icon{
+        position: absolute;
+        left:60px;
+        bottom: 0px;
+        color: gray;
+      }
+      input{
+        font-family:'Courier New', Courier, monospace;
+        border: none;
+        outline:none;
+        background: none;
+        font-size: 18px;
+        color: #555;
+        padding:20px 20px 20px 85px;
+        margin-top: 40px;
+        border-radius: 25px;
+        box-shadow: inset 8px 8px 8px #cbced1,
+                    inset -8px -8px 8px #ffffff;
+      }
+    }
+    .errorRegister{
+      color:red;
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    button{
+      outline: none;
+      border:none;
+      cursor: pointer;
+      width: 350px;
+      margin-top: 40px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Lato', sans-serif;
+      color:#fff;
+      text-align: center;
+      background: $defaultColor;
+      box-shadow: 3px 3px 8px #b1b1b1,
+      -3px -3px 8px #ffffff;
+      transition: 0.5s;
+    }
+  }
+  .dontHaveAccount{
+    display: flex;
+    align-items: center;
+    .LinkLogin{
+      span{
+        font-size: 16px;
+        font-family:'Courier New', Courier, monospace;
+        opacity: 0.7;
+      }
+      .dontHaveAccount1{
+      color: gray;
+      margin-right: 10px;
+      }
+      .dontHaveAccount2{
+      color:rgb(65, 65, 65);
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover{
+        color: $defaultColor
+        }
+      }
+    }
+  }
+  }
+}
+
+
+
+@media (max-width: 1688px){
+  .Loginright{
+    .loginrightwrapper{
+      padding-right: 120px;
+    }
+  }
+}
+
+
+
+@media (max-width: 1373px){
+  .Loginright{
+  .loginrightwrapper{
+    span{
+      font-size: 45px;
+    }
+    .formLogin{
+      .inputsLogin{
+      .icon{
+        left:30px;
+      }
+      input{
+        padding:20px 0px 20px 80px;
+        font-size: 16px;
+      }
+    }
+    button{
+      width: 280px;
+      font-size: 18px;
+    }
+  }
+  .dontHaveAccount{
+    .LinkLogin{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .dontHaveAccount1{
+      margin-right: 0px;
+      }
+    }
+  }
+  }
+}
+}
+
+@media (max-width: 1020px){
+  .Loginright{
+  .loginrightwrapper{
+    padding-right: 0px;
+    span{
+      font-size: 50px;
+    }
+    .formLogin{
+      .inputsLogin{
+      input{
+        padding:20px 20px 20px 95px;
+        font-size: 16px;
+      }
+    }
+    button{
+      width: 330px;
+    }
+  }
+  .dontHaveAccount{
+    .LinkLogin{
+      flex-direction: row;
+      .dontHaveAccount1{
+      margin-right: 10px;
+      }
+    }
+  }
+  }
+}
+}
+@media (max-height: 617px){
+  .Loginright{
+  .loginrightwrapper{
+    span{
+      font-size: 35px;
+    }
+    .formLogin{
+    button{
+      height: 50px;
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+  }
+  }
+}
+}
+
+@media (max-width: 440px){
+  .Loginright{
+  .loginrightwrapper{
+    span{
+      font-size: 40px;
+      margin-top: 0px;
+    }
+    .formLogin{
+      .inputsLogin{
+      input{
+        padding:20px 0px 20px 80px;
+        font-size: 16px;
+      }
+      .icon{
+        display: none;
+      }
+    }
+    button{
+      width: 280px;
+      margin-bottom: 10px;
+    }
+  }
+  .dontHaveAccount{
+    .LinkLogin{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .dontHaveAccount1{
+      margin-right: 0px;
+      }
+    }
+  }
+  }
+}
+}
+
+
+@media (orientation: landscape) and (max-height: 434px){
+  .Loginright{
+    .loginrightwrapper{
+      span{
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .formLogin{
+        .inputsLogin{
+        input{
+          padding:20px 0px 20px 65px;
+          font-size: 16px;
+          margin-top: 30px;
+        }
+      }
+      button{
+        width: 240px;
+        margin-bottom: 10px;
+      }
+    }
+    .dontHaveAccount{
+      .LinkLogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .dontHaveAccount1{
+        margin-right: 0px;
+        }
+      }
+    }
+    }
+  }
+}
+@media (max-height: 549px){
+  .Loginright{
+    .loginrightwrapper{
+      .dontHaveAccount1{
+        display: none;
+        }
+    }
+  }
+}
+@media (max-height: 482px){
+  .Loginright{
+    .loginrightwrapper{
+      span{
+        display: none;
+      }
+      .formLogin{
+      button{
+        width: 280px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    }
+  }
+}
+@media (max-width: 305px) {
+  .Loginright{
+    .loginrightwrapper{
+      span{
+        display: none;
+      }
+      .formLogin{
+        .inputsLogin{
+          input{
+            padding:20px 0px 20px 20px;
+            font-size: 16px;
+            margin-top: 30px;
+          }
+        }
+      button{
+        width: 230px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+    }
+  }
+}
+@media (max-height: 335px) {
+  .Loginright{
+    .loginrightwrapper{
+      span{
+        display: none;
+      }
+      .formLogin{
+        .inputsLogin{
+          input{
+            padding:10px 0px 10px 20px;
+            margin-top: 20px;
+          }
+          .icon{
+            display: none;
+          }
+        }
+      button{
+        width: 230px;
+        height: 30px;
+      }
+    }
+    }
+  }
+}
