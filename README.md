@@ -1,6 +1,6 @@
 ![chat-app](https://user-images.githubusercontent.com/84191534/118781176-0e046280-b88d-11eb-98a4-926f884af670.png)
 LIVE DEMO: https://wizardly-fermat-7cd3a3.netlify.app/
-
+That's free server sometimes you need to wait a few seconds to log in. :)
 # chat-app
 
 1. You need to change .env file if you want to connect database. Type your own mongodb link.
